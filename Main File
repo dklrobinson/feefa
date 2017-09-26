@@ -14,9 +14,9 @@ one_two = 0
 have_ball = True
 
 print("Welcome to Dylan's texted based FIFA game!")
-help_page_wanted = bool(input("Would you like the help page? (Please enter 'True' or 'False')"))
+help_page_wanted = game_functions.getBool(input("Would you like the help page? (Please enter 'Yes' or 'No')"))
 while help_page_wanted != False and help_page_wanted != True:
-    help_page_wanted = bool(input("Would you like the help page? (Please enter 'True' or 'False')"))
+    help_page_wanted = game_functions.getBool(input("Would you like the help page? (Please enter 'Yes' or 'No')"))
 if help_page_wanted == True:
     print(help_page)
 while one_two != 1 and one_two != 2:
